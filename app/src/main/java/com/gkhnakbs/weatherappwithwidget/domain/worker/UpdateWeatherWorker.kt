@@ -11,10 +11,10 @@ import androidx.glance.appwidget.state.updateAppWidgetState
 import androidx.hilt.work.HiltWorker
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import com.gkhnakbs.weatherappwithwidget.domain.repository.WeatherRepository
+import com.gkhnakbs.weatherappwithwidget.domain.repository.WeatherRepositoryForWidget
 import com.gkhnakbs.weatherappwithwidget.domain.state.WeatherWidgetState
 import com.gkhnakbs.weatherappwithwidget.domain.state.WeatherWidgetStateDefinition
-import com.gkhnakbs.weatherappwithwidget.presentation.ui.WeatherWidget
+import com.gkhnakbs.weatherappwithwidget.presentation.ui.widget.WeatherWidget
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
 import java.text.SimpleDateFormat
@@ -26,7 +26,7 @@ class UpdateWeatherWorker @AssistedInject constructor(
     @Assisted private val context: Context,
     @Assisted workerParameters: WorkerParameters,
     // Hilt, Repository'yi buraya enjekte edecek
-    private val repository: WeatherRepository,
+    private val repository: WeatherRepositoryForWidget,
 ) : CoroutineWorker(context, workerParameters) {
 
     override suspend fun doWork(): Result {

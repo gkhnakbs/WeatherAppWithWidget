@@ -5,10 +5,10 @@ import com.gkhnakbs.weatherappwithwidget.domain.model.data.WeatherResponse
 import javax.inject.Inject
 
 /**
- * Created by Gökhan Akbaş on 19/11/2025.
+ * Created by Gökhan Akbaş on 27/10/2025.
  */
 
-class WeatherRepository @Inject constructor(
+class WeatherRepositoryForWidget @Inject constructor(
     private val apiService: WeatherApiService
 ) {
     // API isteğini yapan suspend fonksiyon

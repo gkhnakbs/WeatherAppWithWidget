@@ -7,7 +7,7 @@ import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
 import com.gkhnakbs.weatherappwithwidget.domain.worker.UpdateWeatherWorker
-import com.gkhnakbs.weatherappwithwidget.presentation.ui.WeatherWidget
+import com.gkhnakbs.weatherappwithwidget.presentation.ui.widget.WeatherWidget
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.concurrent.TimeUnit
 

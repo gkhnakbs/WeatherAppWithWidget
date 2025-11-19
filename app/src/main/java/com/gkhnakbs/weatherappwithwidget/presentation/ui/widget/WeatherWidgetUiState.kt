@@ -1,4 +1,4 @@
-package com.gkhnakbs.weatherappwithwidget.presentation.ui
+package com.gkhnakbs.weatherappwithwidget.presentation.ui.widget
 
 /**
  * Created by Gökhan Akbaş on 27/10/2025.

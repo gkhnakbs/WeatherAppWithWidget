@@ -1,4 +1,4 @@
-package com.gkhnakbs.weatherappwithwidget.presentation.ui
+package com.gkhnakbs.weatherappwithwidget.presentation.ui.widget
 
 import android.content.Context
 import android.content.Intent

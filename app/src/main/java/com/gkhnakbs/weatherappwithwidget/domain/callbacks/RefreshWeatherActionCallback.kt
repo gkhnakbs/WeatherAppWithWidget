@@ -11,7 +11,7 @@ import androidx.glance.appwidget.state.updateAppWidgetState
 import com.gkhnakbs.weatherappwithwidget.domain.di.WeatherRepositoryEntryPoint
 import com.gkhnakbs.weatherappwithwidget.domain.state.WeatherWidgetState
 import com.gkhnakbs.weatherappwithwidget.domain.state.WeatherWidgetStateDefinition
-import com.gkhnakbs.weatherappwithwidget.presentation.ui.WeatherWidget
+import com.gkhnakbs.weatherappwithwidget.presentation.ui.widget.WeatherWidget
 import dagger.hilt.android.EntryPointAccessors
 import java.text.SimpleDateFormat
 import java.util.Date

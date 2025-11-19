@@ -1,6 +1,6 @@
 package com.gkhnakbs.weatherappwithwidget.domain.di
 
-import com.gkhnakbs.weatherappwithwidget.domain.repository.WeatherRepository
+import com.gkhnakbs.weatherappwithwidget.domain.repository.WeatherRepositoryForWidget
 import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
@@ -12,5 +12,5 @@ import dagger.hilt.components.SingletonComponent
 @EntryPoint
 @InstallIn(SingletonComponent::class)
 interface WeatherRepositoryEntryPoint {
-    fun weatherRepository(): WeatherRepository
+    fun weatherRepository(): WeatherRepositoryForWidget
 }

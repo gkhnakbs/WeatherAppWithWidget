@@ -1,6 +1,7 @@
 package com.gkhnakbs.weatherappwithwidget.data.di
 
 import com.gkhnakbs.weatherappwithwidget.data.api.WeatherApiService
+import com.gkhnakbs.weatherappwithwidget.domain.repository.WeatherRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -28,6 +29,12 @@ object ApiModule {
     @Singleton
     fun provideApiService(retrofit: Retrofit): WeatherApiService {
         return retrofit.create(WeatherApiService::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideWeatherRepository(apiService: WeatherApiService): WeatherRepository {
+        return WeatherRepository(apiService)
     }
 
 }
