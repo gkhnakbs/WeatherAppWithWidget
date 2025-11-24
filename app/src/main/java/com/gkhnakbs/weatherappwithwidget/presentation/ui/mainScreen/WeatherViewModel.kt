@@ -23,8 +23,8 @@ class WeatherViewModel @Inject constructor(
 ) : ViewModel() {
 
     companion object {
-        private const val USER_LATITUDE = 39.9334
-        private const val USER_LONGITUDE = 32.8597
+        private const val USER_LATITUDE = 39.960108
+        private const val USER_LONGITUDE = 32.791761
     }
 
 

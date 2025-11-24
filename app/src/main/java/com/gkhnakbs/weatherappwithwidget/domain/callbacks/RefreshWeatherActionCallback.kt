@@ -46,7 +46,7 @@ class RefreshWeatherActionCallback : ActionCallback {
         // 3. API'den veriyi çek
         try {
             // Ankara koordinatları
-            val data = repository.getWeatherData(38.643976, 34.734958)
+            val data = repository.getWeatherData(39.960108, 32.791761)
 
             // 4. Gelen veriyi widget state'ine kaydet
             data?.let {
